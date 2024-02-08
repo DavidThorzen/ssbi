@@ -233,15 +233,6 @@
           "z": 7000.00
         },
         {
-          "config": "{\"name\":\"96f33ae0564d0bd8960c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":655.4879000780641,\"y\":392.6932084309134,\"z\":4000,\"width\":624.512099921936,\"height\":326.74473067915693,\"tabOrder\":4000}},{\"id\":1,\"position\":{\"x\":0,\"y\":337,\"z\":4000,\"width\":324,\"height\":222,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"FactSale.Qty\"},{\"queryRef\":\"FactSale.Qty LY\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactSale\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Qty\"},\"Name\":\"FactSale.Qty\",\"NativeReferenceName\":\"Qty\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Qty LY\"},\"Name\":\"FactSale.Qty LY\",\"NativeReferenceName\":\"Qty LY\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Qty\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 326.74,
-          "width": 624.51,
-          "x": 655.49,
-          "y": 392.69,
-          "z": 4000.00
-        },
-        {
           "config": "{\"name\":\"b0ee88ff8005502d741a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1133.130699088146,\"y\":254.8328267477204,\"z\":8000,\"width\":146.8693009118541,\"height\":138.11550151975683,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimDate.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"},\"Name\":\"DimDate.Year\",\"NativeReferenceName\":\"Year\"}]},\"syncGroup\":{\"groupName\":\"Year\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}},\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"2015D\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2015D\"}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
           "filters": "[]",
           "height": 138.12,
