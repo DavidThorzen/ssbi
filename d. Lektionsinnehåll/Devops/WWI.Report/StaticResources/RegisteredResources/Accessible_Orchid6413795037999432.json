@@ -1,0 +1,138 @@
+{
+  "name": "Accessible Orchid",
+  "dataColors": [
+    "#F27F3D",
+    "#F2CF63",
+    "#7BC1FA",
+    "#14C8DD",
+    "#4DAB59",
+    "#C1E2FA",
+    "#8A9A87",
+    "#E60075"
+  ],
+  "foreground": "#FFFFFF",
+  "background": "#192E40",
+  "foregroundNeutralSecondary": "#FFFFFF",
+  "backgroundLight": "#FFFFFF",
+  "foregroundNeutralTertiary": "#FFFFFF",
+  "backgroundNeutral": "#FFFFFF",
+  "tableAccent": "#BD3978",
+  "maximum": "#3F213F",
+  "center": "#663466",
+  "minimum": "#6E98B5",
+  "bad": "#BD3978",
+  "neutral": "#C480A7",
+  "good": "#9C6584",
+  "textClasses": {
+    "callout": {
+      "color": "#FFFFFF",
+      "fontSize": 18
+    },
+    "label": {
+      "color": "#FFFFFF"
+    },
+    "title": {
+      "color": "#FFFFFF"
+    },
+    "header": {
+      "color": "#FFFFFF"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#1B3046"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "*": {
+      "*": {
+        "background": [
+          {
+            "transparency": 100
+          }
+        ],
+        "visualHeader": [
+          {
+            "background": {
+              "solid": {
+                "color": "#FFF894"
+              }
+            },
+            "foreground": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          }
+        ],
+        "filterCard": [
+          {
+            "$id": "Available",
+            "backgroundColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspacePane": [
+          {
+            "foregroundColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          }
+        ],
+        "visualTooltip": [
+          {
+            "themedTitleFontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "themedValueFontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "themedBackground": {
+              "solid": {
+                "color": "#F2CF63"
+              }
+            },
+            "actionFontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          }
+        ],
+        "visualHeaderTooltip": [
+          {
+            "themedTitleFontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "themedBackground": {
+              "solid": {
+                "color": "#F2CF63"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
