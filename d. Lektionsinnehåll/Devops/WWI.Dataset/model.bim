@@ -1320,11 +1320,12 @@
                 "property": "IsHidden"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "isHidden": true,
             "lineageTag": "0f5cb6e3-3cdc-40f5-9399-bc2766ec8b87",
             "sourceColumn": "Lineage Key",
-            "summarizeBy": "none"
+            "summarizeBy": "count"
           }
         ],
         "lineageTag": "1130ae7d-1eb8-4970-950b-f895e1fcd0bf",
@@ -1374,9 +1375,10 @@
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
                 "    #\"Replaced Value\" = Table.ReplaceValue(#\"Promoted Headers\",\".\",\",\",Replacer.ReplaceText,{\"Quantity\", \"Unit Price\", \"Tax Rate\", \"Total Excluding Tax\", \"Tax Amount\", \"Profit\", \"Total Including Tax\", \"Total Dry Items\", \"Total Chiller Items\", \"Lineage Key\"}),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Replaced Value\",{{\"Total Including Tax\", type number}, {\"Profit\", type number}, {\"Tax Amount\", type number}, {\"Total Excluding Tax\", type number}, {\"Tax Rate\", Int64.Type}, {\"Unit Price\", type number}, {\"Quantity\", Int64.Type}, {\"Total Dry Items\", Int64.Type}, {\"Total Chiller Items\", Int64.Type}, {\"Invoice Date Key\", type date}, {\"Delivery Date Key\", type date}}),",
-                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"Quantity\", \"Quantity\"}})",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"Quantity\", \"Quantity\"}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"Lineage Key\", Int64.Type}})",
                 "in",
-                "    #\"Renamed Columns\""
+                "    #\"Changed Type1\""
               ],
               "type": "m"
             }
